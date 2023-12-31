@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/SQA/Interview/selenium_automation_wafilife">
+        <classes>
+
+            <class name="testcases.loginPage_test">
+                <methods>
+                    <include name="checkHeading"/>
+                    <include name="loginWithWrongCredentials"/>
+                    <include name="loginWithValidCredential"/>
+                    <include name="logoutTest"/>
+                </methods>
+            </class>
+
+            <class name="testcases.userPage_test">
+                <methods>
+                    <include name="goToUserPage"/>
+                    <include name="addNewButtonPresence"/>
+                    <include name="searchRealUser"/>
+                    <include name="searchUnrealUser"/>
+                    <include name="searchByRealdID"/>
+                </methods>
+            </class>
+
+            <class name="testcases.addRemoveUser_test">
+                <methods>
+                    <include name="clickOnAddUser"/>
+                    <include name="createUserWithoutInfo"/>
+                    <include name="createUser"/>
+                    <include name="removeUser"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
